@@ -1,0 +1,54 @@
+.content {
+    background-blend-mode: hue;
+    color: rgb(0, 0, 94);
+    margin-bottom: 2px;
+    text-align: center;
+    position: relative;
+    width: 8%;
+    float: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Amiko';
+    font-weight: 800;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.logo {
+    float: left;
+    width: 6%;
+    margin-top: -14px;
+    margin-bottom: 2px;
+    text-align: center;
+    position: relative;
+    -webkit-animation:spin 3s linear infinite alternate;
+    -moz-animation:spin 3s linear infinite alternate;
+    animation:spin 3s linear infinite alternate;
+}
+
+@-moz-keyframes spin { 30% { -moz-transform: translate(10px,0); } 70% {-moz-transform: translate(0,0);} }
+@-webkit-keyframes spin { 30% { -moz-transform: translate(10px,0);} 70% {-moz-transform: translate(0,0);} }
+@keyframes spin { 30% { -webkit-transform: translate(10px,0); transform:translate(10px,0);} 70% {-webkit-transform: translate(0,0); transform:translate(0,0);} }
+
+.splitter {
+    float: right;
+    width: 8%;
+    top: 30%;
+    margin-bottom: 2px;
+    text-align: center;
+    position: relative;
+}
+
+.tab {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 60px;
+    background-color: rgba(251, 251, 253, 0.153);
+    width: 100%;
+}
+
+.content:hover {
+    background: floralwhite;
+    cursor: pointer;
+}
